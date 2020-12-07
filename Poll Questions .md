@@ -18,7 +18,7 @@
 ### At the end of the presentations before chat
 
  8. Are you convinced that ontologies are helpful ? <i>(Yes, No, I'm not sure)</i>
- 9. Are you interested in building an ontology? <i>(Yes, No, Maybe later, Yeah-not my thing but good to know what they are.)</i>
+ 9. Are you interested in building an ontology? <i>(Yes, Maybe later, Not my thing but good to know what they are, No.)</i>
 
    
 
