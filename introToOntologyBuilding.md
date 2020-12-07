@@ -44,11 +44,11 @@ __Required Skills:__
 
 ### 2. Identify and record anatomical terms.
 
-__Overview:__  
+__Overview:__    
 
 The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.  
 
-_Fig 1. Literature Term Collection Sheet_
+_Fig 1. Literature Term Collection Sheet_  
 ![](ontology-images/litTerms.png)
 
 > column 1: the unique identifier for each citation from the literature list.   
@@ -56,7 +56,7 @@ _Fig 1. Literature Term Collection Sheet_
 >
 > 
 
-__How to:__
+__How to:__  
 Systematically read through each of the manuscripts found with the pre-designated search criteria (Step 1).   
 * Record each anatomical term found in each publication.  
 * Link to a citation  
@@ -65,15 +65,15 @@ Systematically read through each of the manuscripts found with the pre-designate
   * This makes future definition writing easier  
 * Create a new class sheet that has one term per row with a citation column (fig 4, below).  
 
-__Software:__
+__Software:__  
    Option 1:  Google Sheets  
    Option 2:  Scripting language like perl or python.   
 
-__Required Skills:__
+__Required Skills:__  
    Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
    Option 2: Use or write a script to manipulate text.  
 
-_Fig 2. Example Perl script for organizing data_  
+_Fig 2. Example Perl script for organizing data_    
 ```perl
 #!/usr/bin/perl
 use strict;
