@@ -12,8 +12,7 @@ __Overview:__
 
 Very first step is to amass publications for the collection of terms for your new ontology. The manuscripts should contain anatomical terms that cover the majority of the terms you want to include in the new anatomy ontology.  This is an important method for reporting and reproducibility.
 
-<u>PLANA Literature Google Sheet</u>
-
+_PLANA Literature Google Sheet_
 ![](ontology-images/litSheet.png)
 
 > Capture the unique identifier, such as the Pubmed id (PMID) or ISBN, any other fields you might want to search by, for example, author, title, and citation. To each record we assigned a similarly formatted unique ID in the first column.
@@ -50,7 +49,6 @@ __Overview:__
 The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.
 
 <u>Fig 1. Literature Term Collection Sheet</u>
-
 ![](ontology-images/litTerms.png)
 
 > column 1: the unique identifier for each citation from the literature list. 
@@ -76,8 +74,7 @@ __Required Skills:__
 	Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
 	Option 2: Use or write a script to manipulate text.
 
-<u>Fig 2. Example Perl script for organizing data</u> 
-
+_Fig 2. Example Perl script for organizing data_ 
 ```perl
 #!/usr/bin/perl
 use strict;
@@ -107,8 +104,7 @@ foreach my $term (sort keys %terms){
 
 
 
-<u>Fig 3. Output for term sorting perl script</u>
-
+_Fig 3. Output for term sorting perl script_
 ```text
 %] perl getList.pl term_collection.tsv 
 9+1 axonemal microtuble arrangement	203
@@ -133,8 +129,7 @@ AP gradient	144
 
 
 
-<u>Fig 4. Ontology class management sheet</u>
-
+_Fig 4. Ontology class management sheet_
 ![](ontology-images/classes.png)
 
 > Output from the perl script can be pasted into a google sheet. Use this sheet to build and further organize your ontology terms
@@ -150,8 +145,7 @@ __Overview:__
 
 The goal is to identify groups of terms that have the same definition but different names, synonyms. An additional goal is to pinpoint terms that might not be great solo terms, or synonyms, but would be excellent to use in a definition.
 
-<u>Fig 5. Updated Ontology class management sheet with conceptual groups</u>
-
+_Fig 5. Updated Ontology class management sheet with conceptual groups_
 ![](ontology-images/termOrganization.png)
 
 > Ontology class management sheet from fig 4 with conceptually grouped terms.
@@ -167,10 +161,10 @@ __How to:__
 
 A. Make Groups for term use:
 
-	1. Synonyms 
- 	2. Words to be used in the definition. 
- 	3. Classes 
- 	4. Not useful (include reason why)
+  1. Synonyms 
+  2. Words to be used in the definition. 
+  3. Classes 
+  4. Not useful (include reason why)
 
 B. Copy and paste terms into new groups (see fig 5)
 
@@ -191,8 +185,7 @@ __Overview:__
 
 The goal is to determine the overall structure and granularity of the ontology by grouping terms into larger categorical bins.
 
-<u>Fig 5. Updated Ontology class management sheet with hierarchical groups</u>
-
+_Fig 5. Updated Ontology class management sheet with hierarchical groups_
 ![](ontology-images/heirGrouping.png)
 
 > Ontology class manage sheet that has added super classes.
@@ -243,8 +236,7 @@ The goal is to start connecting your ontology to other ontologies. There is more
 
 
 
-<u>Fig 6. Updated Ontology class management sheet with other ontology dbxrefs</u>
-
+_Fig 6. Updated Ontology class management sheet with other ontology dbxrefs_
 ![](ontology-images/dbxref.png)
 
 > Ontology class management sheet with a new column, dbxref.
@@ -280,7 +272,7 @@ __Required Skills:__
 	A. Reading
 	
 
-<u>Fig 7. Ontology Lookup Service</u>
+_Fig 7. Ontology Lookup Service_
 
 ![](ontology-images/ols.png)
 
@@ -302,8 +294,7 @@ __Overview:__
 
 The goal is to write a complete and descriptive definition for each class. These should come from the literature, but can be expanded to be more clear. The concept of a class, is that a class is a complete idea which is centered on its definition. The label and the synonyms should be able to be used interchangably. This is made possible by well written definitions.
 
-<u> Fig 9. Updated Ontology class management sheet with definitions</u>
-
+_Fig 9. Updated Ontology class management sheet with definitions_
 ![](ontology-images/defs.png)
 
 > Add more information to your class management sheet. Add in definitions and definition citations. The definiton dbxref is an external database reference that is specifially a reference for the definition. A general dbxref are references to classes in other ontologies that are homologous. 
@@ -341,8 +332,7 @@ __Overview:__
 
 One of the biggest differences between controlled vocabulary and an ontology is that ontology classes can be related to each other. Using defined and consistent relationships is a cornerstone for interoperability, anatomy ontologies should be able to cross talk for comparative work. Most ontologies use relationship terms from the OBO Relations Ontology (RO). 
 
-  <u>Fig 10. Commonly used RO terms</u>
-
+_Fig 10. Commonly used RO terms_
 ![](ontology-images/RO-terms.png)
 
 
@@ -370,8 +360,7 @@ __Required Skills:__
 
 
 
-<u><u>Fig 11. OBO Relations Ontology Search at EBI OLS</u>
-
+_Fig 11. OBO Relations Ontology Search at EBI OLS_
 ![](ontology-images/RO-OLS.png)
 
 > Webinterface at EBI's OLS for Relationship ontology terms
@@ -392,7 +381,7 @@ __How to:__
 
 
 
-<u>Route 1:</u>
+_Route 1:_
 
 Manual route (No scripting required).   All pointing, clicking, draging to manage all terms one by one, with relationships, definitions, and annotation properties.
 
@@ -406,8 +395,7 @@ __Software:__  [Protégé](https://protege.stanford.edu/) (free)
 
 
 
-<u>Fig 12. Protégé</u>
-
+_Fig 12. Protégé_
 ![](ontology-images/protege.png)
 
 > View of the 'auricle' class. From the hierarchy you can see it is an 'organ'. It has a variety of annotation properties that you can see and edit in the 'Annotations' panel. How 'auricle' is related to other terms can be found in the 'Description' panel.
@@ -416,7 +404,7 @@ __Software:__  [Protégé](https://protege.stanford.edu/) (free)
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
 More automated, scripts required, google sheet management of all terms, relationships, and definitions.
 
@@ -428,7 +416,7 @@ More automated, scripts required, google sheet management of all terms, relation
 - Read and writing yaml
 - Understanding [Dead Simple OWL Design Patterns (DOSDP)](https://github.com/INCATools/dead_simple_owl_design_patterns) 
 
-​	
+
 
 **Pros:** continue to use google sheets, quicker, bulk management, easier to manage, amazing support community, instrucutions and manuals available. 
 
@@ -438,8 +426,7 @@ More automated, scripts required, google sheet management of all terms, relation
 
 
 
-<u>Fig 13. Command line management</u>
-
+_Fig 13. Command line management_
 ![](ontology-images/commandline-run.png)
 
 
@@ -456,7 +443,7 @@ Goal is to create your ontology classes from the terms in the ontology class man
 
 __How to:__
 
-<u>Route 1</u>
+_Route 1_
 
 1. Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.
 2. OR ---> Run ODK to generate your template files, then open and edit in Protégé.
@@ -469,7 +456,7 @@ __Software:__  Protégé [, and possiblily ODK]
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
 1. Continue to add information into your google sheet.
 
@@ -498,12 +485,13 @@ The goal is to give your ontology the power of reasoning. We want to connect ter
 
 
 'GABAergic neuron' **is_a** 'neurosecretory neuron'
-
+--
 'neurosecretory neuron' **'part of' some** 'central nervous system'
 'neurosecretory neuron' **'part of' some** 'peripheral nervous system'
-
+--
 'central nervous system' **is_a** 'nervous system'
 'peripheral nervous system' **is_a** 'nervous system'
+--
 
 Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' (even though this is not explicitly stated)
 
@@ -513,19 +501,18 @@ Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' 
 
 **How to:**
 
-<u>Route 1</u>
+_Route 1_
 
 1. Use Protégé to add annotation properties and relationships (SubClass Of).
 
 
 
-<u>Fig 14. Protégé: Subclass Of</u>
-
+_Fig 14. Protégé: Subclass Of_
 ![](ontology-images/protege-subclass.png)
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
 1. Continue to use the ontology class management google sheet to add and edit information and to add relationships.
 2. Add a column for each relationship that is appropriate.
@@ -533,8 +520,7 @@ Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' 
 
 
 
-Fig 15. Ontology class management sheet with class relationships 
-
+_Fig 15. Ontology class management sheet with class relationships_
 ![](/Users/smr/Desktop/ontology-how-to/ontology-images/relationshipsSheet.png)
 
 > Two columns for each relationship property, ie, posterior primary gut branch 'part_of'  'PLANA:0000026' 'gut'
