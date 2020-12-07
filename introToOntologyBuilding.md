@@ -69,9 +69,9 @@ __Software:__
    Option 1:  Google Sheets  
    Option 2:  Scripting language like perl or python.   
 
-__Required Skills:__  
-   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
-   Option 2: Use or write a script to manipulate text.  
+__Required Skills:__    
+   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)  
+   Option 2: Use or write a script to manipulate text.   
 
 _Fig 2. Example Perl script for organizing data_    
 ```perl
@@ -271,7 +271,7 @@ _Fig 7. Ontology Lookup Service_
 
 
 
-<u>Fig 8. Ontology Lookup Service</u>
+_Fig 8. Ontology Lookup Service_
 
 ![](ontology-images/ols2.png)
 
@@ -518,7 +518,7 @@ _Fig 15. Ontology class management sheet with class relationships_
 
 **Overview:**
 
-Goal to make sure that the ontology makes biological sense.
+The goal is to make sure that the ontology makes biological sense.
 
 A standard OBO ontology reasoner (ELK) is used to determine if the relations you explicitly stated between your classes result in correct inferred relationships. We had an issue when we tested for returning all items asserted and inferred that are part of the asexual animal. We saw we had the 'testis nerve plexus' part of the 'asexual animal'. Obviously to us, we saw right away that this was incorrect. We used this incorrect inference to track down the issue.
 
