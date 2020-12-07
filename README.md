@@ -18,7 +18,9 @@ Kansas City, Missouri
 
 Links to files:  
 [Who is Sofia?](sofiarobb-intro.pdf)
+
 [Concepts of Connecting Data - A knowledge graph]()  
+
 [Intoduction to ontology building](introToOntologyBuilding.md)  
 
 
