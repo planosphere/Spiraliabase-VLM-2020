@@ -12,31 +12,30 @@ __Overview:__
 
 Very first step is to amass publications for the collection of terms for your new ontology. The manuscripts should contain anatomical terms that cover the majority of the terms you want to include in the new anatomy ontology.  This is an important method for reporting and reproducibility.
 
-<u>PLANA Literature Google Sheet</u>
-
+_PLANA Literature Google Sheet_
 ![](ontology-images/litSheet.png)
 
 > Capture the unique identifier, such as the Pubmed id (PMID) or ISBN, any other fields you might want to search by, for example, author, title, and citation. To each record we assigned a similarly formatted unique ID in the first column.
 
 
 
-__How to:__
-   A. Specify search engine
-   		i.e., Pubmed 
-   B. Select a starting and ending year with justifications
-   		i.e., 2005 - present,  2005=advent of RNAi
-   C. Record your search terms
-   		i.e., *Schmidtea mediterranea* 
-   D. Provide a list of exceptions
-   		i.e., historical landmark publications: Hyman 1951
+__How to:__   
+* Specify search engine  
+  * i.e., Pubmed   
+* Select a starting and ending year with justifications  
+  * i.e., 2005 - present,  2005=advent of RNAi  
+* Record your search terms  
+  *  i.e., *Schmidtea mediterranea*   
+* Provide a list of exceptions  
+  *  i.e., historical landmark publications: Hyman 1951  
 
-__Software:__
-   A. Publication search engine
-				for publication search
-   B. Google Sheets
-				for recording and organizing publications
+__Software:__  
+* Publication search engine  
+  * for publication search  
+* Google Sheets  
+  * for recording and organizing publications  
 
-__Required Skills:__
+__Required Skills:__  
  		Reading, spread sheet knowledge
 
 
@@ -45,39 +44,36 @@ __Required Skills:__
 
 ### 2. Identify and record anatomical terms.
 
-__Overview:__
+__Overview:__    
 
-The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.
+The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.  
 
-<u>Fig 1. Literature Term Collection Sheet</u>
-
+_Fig 1. Literature Term Collection Sheet_  
 ![](ontology-images/litTerms.png)
 
-> column 1: the unique identifier for each citation from the literature list. 
+> column 1: the unique identifier for each citation from the literature list.   
 > column 2: a semi-colon (;) separated list of every potential anatomical and developmental staging term in its **singular (not-plural)** form.  
 >
 > 
 
-__How to:__
-Systematically read through each of the manuscripts found with the pre-designated search criteria (Step 1). 
-   A. Record each anatomical term found in each publication.
-   B. Link to a citation
-   C. Use the **singular form** of each term identified
-   D. Make a note, if it is the first time a term is used.
-   		This makes future definition writing easier
+__How to:__  
+Systematically read through each of the manuscripts found with the pre-designated search criteria (Step 1).   
+* Record each anatomical term found in each publication.  
+* Link to a citation  
+* Use the **singular form** of each term identified  
+* Make a note, if it is the first time a term is used.  
+  * This makes future definition writing easier  
+* Create a new class sheet that has one term per row with a citation column (fig 4, below).  
 
-   E. Create a new class sheet that has one term per row with a citation column (fig 4, below).
+__Software:__  
+   Option 1:  Google Sheets  
+   Option 2:  Scripting language like perl or python.   
 
-__Software:__
-   Option 1:  Google Sheets
-   Option 2:  Scripting language like perl or python. 
+__Required Skills:__    
+   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)  
+   Option 2: Use or write a script to manipulate text.   
 
-__Required Skills:__
-	Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
-	Option 2: Use or write a script to manipulate text.
-
-<u>Fig 2. Example Perl script for organizing data</u> 
-
+_Fig 2. Example Perl script for organizing data_    
 ```perl
 #!/usr/bin/perl
 use strict;
@@ -107,8 +103,7 @@ foreach my $term (sort keys %terms){
 
 
 
-<u>Fig 3. Output for term sorting perl script</u>
-
+_Fig 3. Output for term sorting perl script_
 ```text
 %] perl getList.pl term_collection.tsv 
 9+1 axonemal microtuble arrangement	203
@@ -133,8 +128,7 @@ AP gradient	144
 
 
 
-<u>Fig 4. Ontology class management sheet</u>
-
+_Fig 4. Ontology class management sheet_  
 ![](ontology-images/classes.png)
 
 > Output from the perl script can be pasted into a google sheet. Use this sheet to build and further organize your ontology terms
@@ -150,35 +144,32 @@ __Overview:__
 
 The goal is to identify groups of terms that have the same definition but different names, synonyms. An additional goal is to pinpoint terms that might not be great solo terms, or synonyms, but would be excellent to use in a definition.
 
-<u>Fig 5. Updated Ontology class management sheet with conceptual groups</u>
-
+_Fig 5. Updated Ontology class management sheet with conceptual groups_
 ![](ontology-images/termOrganization.png)
 
-> Ontology class management sheet from fig 4 with conceptually grouped terms.
+> Ontology class management sheet from fig 4 with conceptually grouped terms.  
 >
-> Column 1: best term (most popular, most "correct") for this concept
-> Column 2: collect terms that work better in a definition of another term than becoming its own class
-> Column 3: semi-colon separated list of all terms that work best as synonyms
-> Column 4: the combined list of citation IDs for the class label, synonyms, and definition terms.
+> Column 1: best term (most popular, most "correct") for this concept  
+> Column 2: collect terms that work better in a definition of another term than becoming its own class  
+> Column 3: semi-colon separated list of all terms that work best as synonyms  
+> Column 4: the combined list of citation IDs for the class label, synonyms, and definition terms.  
 
 
 
 __How to:__
 
-A. Make Groups for term use:
+* Make Groups for term use:  
+  * Synonyms  
+  * Words to be used in the definition.  
+  * Classes  
+  * Not useful (include reason why)  
+* Copy and paste terms into new groups (see fig 5)  
 
-	1. Synonyms 
- 	2. Words to be used in the definition. 
- 	3. Classes 
- 	4. Not useful (include reason why)
-
-B. Copy and paste terms into new groups (see fig 5)
-
-__Software:__
-   A. Google Sheets
+__Software:__  
+   Google Sheets  
 
 __Required Skills:__
-		Reading, writing, drag and dropping, copy and pasting, organizing 
+   Reading, writing, drag and dropping, copy and pasting, organizing 
 	
 
 
@@ -191,44 +182,40 @@ __Overview:__
 
 The goal is to determine the overall structure and granularity of the ontology by grouping terms into larger categorical bins.
 
-<u>Fig 5. Updated Ontology class management sheet with hierarchical groups</u>
-
+_Fig 5. Updated Ontology class management sheet with hierarchical groups_
 ![](ontology-images/heirGrouping.png)
 
-> Ontology class manage sheet that has added super classes.
+> Ontology class manage sheet that has added super classes.  
 >
-> column 1 : class label
-> column 2 : big bin, or the super class, for class, ie, body region, organ, tissue
+> column 1 : class label  
+> column 2 : big bin, or the super class, for class, ie, body region, organ, tissue  
 >
-> Col 3, 4  from above.
+> Col 3, 4  from above.  
 
 
 
 __How to:__
 
-Group terms into 'big bins' or Super Classes. Add a new column to your ontology class management sheet.
+*  Group terms into 'big bins' or Super Classes. Add a new column to your ontology class management sheet.  
 
-
-
-Super classes:
-
-A. Body regions (head region)
-B. Systems (nervous system)
-C. Organs (cephalic ganglia)
-D. Tissues (optic chiasma)
-E. Cells (neuron)
-F. Cell parts (axon)
-G. Organelles (mitochondria)
-H. Spatial terms (midline, planes, etc)
-I. Developmental stages (juvenile, stage 2 embryo)
+Super classes:  
+  * Body regions (head region)  
+  * Systems (nervous system)  
+  * Organs (cephalic ganglia)  
+  * Tissues (optic chiasma)  
+  * Cells (neuron) 
+  * Cell parts (axon)  
+  * Organelles (mitochondria)  
+  * Spatial terms (midline, planes, etc)  
+  * Developmental stages (juvenile, stage 2 embryo)  
 
 
 
 __Software:__
-   A. Google Sheets
+   Google Sheets
 
 __Required Skills:__
-	A. Some understanding of your organism and its anatomical organization (which you might have learned more about when you read the manuscripts to record terms). 
+   Some understanding of your organism and its anatomical organization (which you might have learned more about when you read the manuscripts to record terms). 
 	
 
 
@@ -243,44 +230,40 @@ The goal is to start connecting your ontology to other ontologies. There is more
 
 
 
-<u>Fig 6. Updated Ontology class management sheet with other ontology dbxrefs</u>
-
+_Fig 6. Updated Ontology class management sheet with other ontology dbxrefs_
 ![](ontology-images/dbxref.png)
 
 > Ontology class management sheet with a new column, dbxref.
 > 
-> column 4: other ontology IDs, database crossreferences, dbxref
+> column 4: other ontology IDs, database crossreferences, dbxref  
 
 
 
 __How to:__
 
-A. Add a column for DBXREF to your ontology class management sheet.
-B. Visit the EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)
-C. Start looking up the terms in the ontology class management sheet.
-D. Examine the definitions and super classes for the terms to determine if they match the concepts of your term.
-E. If the term is acceptable, record its ID in the new DBXREF column.
+* Add a column for DBXREF to your ontology class management sheet.  
+* Visit the EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)  
+* Start looking up the terms in the ontology class management sheet.  
+* Examine the definitions and super classes for the terms to determine if they match the concepts of your term.  
+* If the term is acceptable, record its ID in the new DBXREF column.  
 
 __Tips__
 
 Not all ontologies are made the same, not all ontologies are equally reputable. These are ones you should review first: 
-
-1. UBERON: Uber-anatomy ontology. For body systems, organs.
-
-2. CL: Cell ontology. For cell types
-
-3. Other closely related organism ontologies. Check out that they include definitions and how many dbxrefs they use. If they don't have definitions or dont use many dbxrefs, it might not be a good idea to use.
-4. GO: Gene ontology. If your term is not found in UBERON, or CL, then visit GO.
+* UBERON: Uber-anatomy ontology. For body systems, organs.  
+* CL: Cell ontology. For cell types  
+* Other closely related organism ontologies. Check out that they include definitions and how many dbxrefs they use. If they don't have definitions or dont use many dbxrefs, it might not be a good idea to use.  
+* GO: Gene ontology. If your term is not found in UBERON, or CL, then visit GO.  
 
 __Software:__
-   A. Google Sheets
-   B. EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)
+* Google Sheets  
+* EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)  
 
 __Required Skills:__
-	A. Reading
+   Reading  
 	
 
-<u>Fig 7. Ontology Lookup Service</u>
+_Fig 7. Ontology Lookup Service_
 
 ![](ontology-images/ols.png)
 
@@ -288,7 +271,7 @@ __Required Skills:__
 
 
 
-<u>Fig 8. Ontology Lookup Service</u>
+_Fig 8. Ontology Lookup Service_
 
 ![](ontology-images/ols2.png)
 
@@ -302,32 +285,29 @@ __Overview:__
 
 The goal is to write a complete and descriptive definition for each class. These should come from the literature, but can be expanded to be more clear. The concept of a class, is that a class is a complete idea which is centered on its definition. The label and the synonyms should be able to be used interchangably. This is made possible by well written definitions.
 
-<u> Fig 9. Updated Ontology class management sheet with definitions</u>
-
+_Fig 9. Updated Ontology class management sheet with definitions_
 ![](ontology-images/defs.png)
 
 > Add more information to your class management sheet. Add in definitions and definition citations. The definiton dbxref is an external database reference that is specifially a reference for the definition. A general dbxref are references to classes in other ontologies that are homologous. 
 >
-> column 4: definition
-> column 5: the definition citation
+> column 4: definition  
+> column 5: the definition citation  
 
 
 
 __How to:__
 
-A. Create a definition and a definition dbxref column in the ontology class management sheet.  
-
-B. If this term was found in another ontology you can reuse the definition. Be sure to record the other ontology class ID in the definition dbxref column.
-
-C. If this term is not found in another ontology. Look back through your Literature Term Collection Sheet (fig 1) to find your notes about first mention of a class. Retrieve these defintions from the publications for your classes. Record the definition and the PMID or other offical ID in your defintion dbxref column.
+* Create a definition and a definition dbxref column in the ontology class management sheet.  
+* If this term was found in another ontology you can reuse the definition. Be sure to record the other ontology class ID in the definition dbxref column. 
+* If this term is not found in another ontology. Look back through your Literature Term Collection Sheet (fig 1) to find your notes about first mention of a class. Retrieve these defintions from the publications for your classes. Record the definition and the PMID or other offical ID in your defintion dbxref column.
 
 
 
 __Software:__
-   A. Google Sheets
+  Google Sheets
 
 __Required Skills:__
-	A. Reading
+  Reading
 
 
 
@@ -341,37 +321,34 @@ __Overview:__
 
 One of the biggest differences between controlled vocabulary and an ontology is that ontology classes can be related to each other. Using defined and consistent relationships is a cornerstone for interoperability, anatomy ontologies should be able to cross talk for comparative work. Most ontologies use relationship terms from the OBO Relations Ontology (RO). 
 
-  <u>Fig 10. Commonly used RO terms</u>
-
+_Fig 10. Commonly used RO terms_  
 ![](ontology-images/RO-terms.png)
 
 
 
 __How to:__
 
-A. Determine which relationships you are using from RO.
+* Determine which relationships you are using from RO.  
+* Determine usage rules like these common directional rules:  
 
-B. Determine usage rules like these common directional rules:
+YES:			 finger  **part-of**  hand  
+ NO:			 hand **has-part** finger  
 
-YES:			 finger  **part-of**  hand
- NO:			 hand **has-part** finger
-
-YES:			differentiated cell **develops-from** stem cell
- NO:			stem cell **develops-into** differentiated cell   (not all stem cells develop into anything)
+YES:			differentiated cell **develops-from** stem cell  
+ NO:			stem cell **develops-into** differentiated cell   (not all stem cells develop into anything)  
 
 
 > has-part and develops-into makes relatioship managment more difficult. Imagine that every time you add a new term that is part-of some structure, you need to remember what that structure is, and go find it to add new has-part relationships. Using part-of makes it so you only have to edit the new term you are adding. Adding all the structures that it is part of. 
 
 __Software:__
-   A. OLS and a google sheet to record RO term of interest
+   OLS and a google sheet to record RO term of interest  
 
 __Required Skills:__
-	A. Reading, writing, reasoning
+   Reading, writing, reasoning
 
 
 
-<u><u>Fig 11. OBO Relations Ontology Search at EBI OLS</u>
-
+_Fig 11. OBO Relations Ontology Search at EBI OLS_
 ![](ontology-images/RO-OLS.png)
 
 > Webinterface at EBI's OLS for Relationship ontology terms
@@ -392,7 +369,7 @@ __How to:__
 
 
 
-<u>Route 1:</u>
+_Route 1:_
 
 Manual route (No scripting required).   All pointing, clicking, draging to manage all terms one by one, with relationships, definitions, and annotation properties.
 
@@ -406,8 +383,7 @@ __Software:__  [Protégé](https://protege.stanford.edu/) (free)
 
 
 
-<u>Fig 12. Protégé</u>
-
+_Fig 12. Protégé_
 ![](ontology-images/protege.png)
 
 > View of the 'auricle' class. From the hierarchy you can see it is an 'organ'. It has a variety of annotation properties that you can see and edit in the 'Annotations' panel. How 'auricle' is related to other terms can be found in the 'Description' panel.
@@ -416,7 +392,7 @@ __Software:__  [Protégé](https://protege.stanford.edu/) (free)
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
 More automated, scripts required, google sheet management of all terms, relationships, and definitions.
 
@@ -424,11 +400,11 @@ More automated, scripts required, google sheet management of all terms, relation
 
 **Skills:**
 
-- Some scripting knowledge (Python, Perl, or other)
-- Read and writing yaml
-- Understanding [Dead Simple OWL Design Patterns (DOSDP)](https://github.com/INCATools/dead_simple_owl_design_patterns) 
+* Some scripting knowledge (Python, Perl, or other)  
+* Read and writing yaml  
+* Understanding [Dead Simple OWL Design Patterns (DOSDP)](https://github.com/INCATools/dead_simple_owl_design_patterns)   
 
-​	
+
 
 **Pros:** continue to use google sheets, quicker, bulk management, easier to manage, amazing support community, instrucutions and manuals available. 
 
@@ -438,8 +414,7 @@ More automated, scripts required, google sheet management of all terms, relation
 
 
 
-<u>Fig 13. Command line management</u>
-
+_Fig 13. Command line management_
 ![](ontology-images/commandline-run.png)
 
 
@@ -456,34 +431,31 @@ Goal is to create your ontology classes from the terms in the ontology class man
 
 __How to:__
 
-<u>Route 1</u>
+_Route 1_
 
-1. Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.
-2. OR ---> Run ODK to generate your template files, then open and edit in Protégé.
+* Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.  
+* OR ---> Run ODK to generate your template files, then open and edit in Protégé.  
 
 
 
-__Software:__  Protégé [, and possiblily ODK]
+**Software:**  Protégé [, and possiblily ODK]
 
 **Skills:** Protégé skills [, linux command line knowledge] 
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
-1. Continue to add information into your google sheet.
-
-2. Add a column for an ID for each class and populate (PLANA:0000012)
-
-3. Create/Use DOSDP patterns for creating all your terms (Support is available).
-
-4. Run included ODK scripts to generate appropriate files and import terms from other ontologies.
+* Continue to add information into your google sheet.  
+* Add a column for an ID for each class and populate (PLANA:0000012)  
+* Create/Use DOSDP patterns for creating all your terms (Support is available).  
+* Run included ODK scripts to generate appropriate files and import terms from other ontologies.  
 
    
 
-__Software:__  ODK
+**Software:**  ODK  
 
-**Skills:** Protégé skills, linux command line knowledge 
+**Skills:** Protégé skills, linux command line knowledge   
 
 
 
@@ -497,13 +469,16 @@ The goal is to give your ontology the power of reasoning. We want to connect ter
 
 
 
-'GABAergic neuron' **is_a** 'neurosecretory neuron'
+'GABAergic neuron' **is_a** 'neurosecretory neuron'  
 
-'neurosecretory neuron' **'part of' some** 'central nervous system'
-'neurosecretory neuron' **'part of' some** 'peripheral nervous system'
 
-'central nervous system' **is_a** 'nervous system'
-'peripheral nervous system' **is_a** 'nervous system'
+'neurosecretory neuron' **'part of' some** 'central nervous system'  
+'neurosecretory neuron' **'part of' some** 'peripheral nervous system'  
+
+
+'central nervous system' **is_a** 'nervous system'  
+'peripheral nervous system' **is_a** 'nervous system'  
+
 
 Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' (even though this is not explicitly stated)
 
@@ -513,28 +488,26 @@ Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' 
 
 **How to:**
 
-<u>Route 1</u>
+_Route 1_
 
-1. Use Protégé to add annotation properties and relationships (SubClass Of).
+* Use Protégé to add annotation properties and relationships (SubClass Of).
 
 
 
-<u>Fig 14. Protégé: Subclass Of</u>
-
+_Fig 14. Protégé: Subclass Of_
 ![](ontology-images/protege-subclass.png)
 
 
 
-<u>Route 2:</u> 
+_Route 2:_
 
-1. Continue to use the ontology class management google sheet to add and edit information and to add relationships.
-2. Add a column for each relationship that is appropriate.
-3. Add class ID to the correct new columns.
+* Continue to use the ontology class management google sheet to add and edit information and to add relationships.
+* Add a column for each relationship that is appropriate.
+* Add class ID to the correct new columns.
 
 
 
-Fig 15. Ontology class management sheet with class relationships 
-
+_Fig 15. Ontology class management sheet with class relationships_
 ![](/Users/smr/Desktop/ontology-how-to/ontology-images/relationshipsSheet.png)
 
 > Two columns for each relationship property, ie, posterior primary gut branch 'part_of'  'PLANA:0000026' 'gut'
@@ -545,7 +518,7 @@ Fig 15. Ontology class management sheet with class relationships
 
 **Overview:**
 
-Goal to make sure that the ontology makes biological sense.
+The goal is to make sure that the ontology makes biological sense.
 
 A standard OBO ontology reasoner (ELK) is used to determine if the relations you explicitly stated between your classes result in correct inferred relationships. We had an issue when we tested for returning all items asserted and inferred that are part of the asexual animal. We saw we had the 'testis nerve plexus' part of the 'asexual animal'. Obviously to us, we saw right away that this was incorrect. We used this incorrect inference to track down the issue.
 
@@ -553,11 +526,11 @@ A standard OBO ontology reasoner (ELK) is used to determine if the relations you
 
 **How to:**
 
-1. Use Protégé, the Protégé ELK reasoner, and Protégé DL-Query plugin to formulate and run queries.
-2. Correct any inconsistencies
-3. Run more queries
+* Use Protégé, the Protégé ELK reasoner, and Protégé DL-Query plugin to formulate and run queries.
+* Correct any inconsistencies
+* Run more queries
 
-<u>Fig 14. Protégé DL Query Plugin and example query and reasoned results</u>
+_Fig 14. Protégé DL Query Plugin and example query and reasoned results_
 
 ![](ontology-images/dlquery.png)
 
@@ -575,7 +548,7 @@ The goal is to have official versioned releases. This is important for users tha
 
 **How to:**
 
-1. Create a GitHub release. There are tutorials for this, and information can befound in the ODK REAMDE documentation. 
+* Create a GitHub release. There are tutorials for this, and information can befound in the ODK REAMDE documentation. 
 
 
 
@@ -593,9 +566,9 @@ An ontology is a living document. New terms will be needed to be added, terms wi
 
 **How to:**
 
-1. Keep modifiying your spread sheet and running ODK scripts to update your owl files.
-2. Make a new release.
-3. Make a plan on how to handle community involment for addition, modifying, and retiring of terms. 
+* Keep modifiying your spread sheet and running ODK scripts to update your owl files.  
+* Make a new release.  
+* Make a plan on how to handle community involment for addition, modifying, and retiring of terms.   
 
 
 
