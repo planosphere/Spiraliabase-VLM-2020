@@ -20,20 +20,20 @@ _PLANA Literature Google Sheet_
 
 
 __How to:__
-   A. Specify search engine
-   		i.e., Pubmed 
-   B. Select a starting and ending year with justifications
-   		i.e., 2005 - present,  2005=advent of RNAi
-   C. Record your search terms
-   		i.e., *Schmidtea mediterranea* 
-   D. Provide a list of exceptions
-   		i.e., historical landmark publications: Hyman 1951
+   A. Specify search engine  
+   		i.e., Pubmed   
+   B. Select a starting and ending year with justifications  
+   		i.e., 2005 - present,  2005=advent of RNAi  
+   C. Record your search terms  
+   		i.e., *Schmidtea mediterranea*   
+   D. Provide a list of exceptions  
+   		i.e., historical landmark publications: Hyman 1951  
 
 __Software:__
-   A. Publication search engine
-				for publication search
-   B. Google Sheets
-				for recording and organizing publications
+   A. Publication search engine  
+				for publication search  
+   B. Google Sheets  
+				for recording and organizing publications  
 
 __Required Skills:__
  		Reading, spread sheet knowledge
@@ -46,35 +46,34 @@ __Required Skills:__
 
 __Overview:__
 
-The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.
+The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.  
 
 _Fig 1. Literature Term Collection Sheet_
 ![](ontology-images/litTerms.png)
 
-> column 1: the unique identifier for each citation from the literature list. 
+> column 1: the unique identifier for each citation from the literature list.   
 > column 2: a semi-colon (;) separated list of every potential anatomical and developmental staging term in its **singular (not-plural)** form.  
 >
 > 
 
 __How to:__
-Systematically read through each of the manuscripts found with the pre-designated search criteria (Step 1). 
-   A. Record each anatomical term found in each publication.
-   B. Link to a citation
-   C. Use the **singular form** of each term identified
-   D. Make a note, if it is the first time a term is used.
-   		This makes future definition writing easier
-
-   E. Create a new class sheet that has one term per row with a citation column (fig 4, below).
+Systematically read through each of the manuscripts found with the pre-designated search criteria (Step 1).   
+   A. Record each anatomical term found in each publication.  
+   B. Link to a citation  
+   C. Use the **singular form** of each term identified  
+   D. Make a note, if it is the first time a term is used.  
+   		This makes future definition writing easier  
+   E. Create a new class sheet that has one term per row with a citation column (fig 4, below).  
 
 __Software:__
-   Option 1:  Google Sheets
-   Option 2:  Scripting language like perl or python. 
+   Option 1:  Google Sheets  
+   Option 2:  Scripting language like perl or python.   
 
 __Required Skills:__
-	Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
-	Option 2: Use or write a script to manipulate text.
+   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)
+   Option 2: Use or write a script to manipulate text.  
 
-_Fig 2. Example Perl script for organizing data_ 
+_Fig 2. Example Perl script for organizing data_  
 ```perl
 #!/usr/bin/perl
 use strict;
@@ -159,20 +158,20 @@ _Fig 5. Updated Ontology class management sheet with conceptual groups_
 
 __How to:__
 
-A. Make Groups for term use:
+A. Make Groups for term use:  
 
-  1. Synonyms 
-  2. Words to be used in the definition. 
-  3. Classes 
-  4. Not useful (include reason why)
+  1. Synonyms   
+  2. Words to be used in the definition.  
+  3. Classes  
+  4. Not useful (include reason why) 
 
-B. Copy and paste terms into new groups (see fig 5)
+B. Copy and paste terms into new groups (see fig 5)  
 
 __Software:__
-   A. Google Sheets
+   A. Google Sheets  
 
 __Required Skills:__
-		Reading, writing, drag and dropping, copy and pasting, organizing 
+   Reading, writing, drag and dropping, copy and pasting, organizing 
 	
 
 
@@ -199,21 +198,21 @@ _Fig 5. Updated Ontology class management sheet with hierarchical groups_
 
 __How to:__
 
-Group terms into 'big bins' or Super Classes. Add a new column to your ontology class management sheet.
+Group terms into 'big bins' or Super Classes. Add a new column to your ontology class management sheet.  
 
 
 
 Super classes:
 
-A. Body regions (head region)
-B. Systems (nervous system)
-C. Organs (cephalic ganglia)
-D. Tissues (optic chiasma)
-E. Cells (neuron)
-F. Cell parts (axon)
-G. Organelles (mitochondria)
-H. Spatial terms (midline, planes, etc)
-I. Developmental stages (juvenile, stage 2 embryo)
+A. Body regions (head region)  
+B. Systems (nervous system)  
+C. Organs (cephalic ganglia)  
+D. Tissues (optic chiasma)  
+E. Cells (neuron)  
+F. Cell parts (axon)  
+G. Organelles (mitochondria)  
+H. Spatial terms (midline, planes, etc)  
+I. Developmental stages (juvenile, stage 2 embryo)  
 
 
 
@@ -221,7 +220,7 @@ __Software:__
    A. Google Sheets
 
 __Required Skills:__
-	A. Some understanding of your organism and its anatomical organization (which you might have learned more about when you read the manuscripts to record terms). 
+   A. Some understanding of your organism and its anatomical organization (which you might have learned more about when you read the manuscripts to record terms). 
 	
 
 
@@ -247,29 +246,27 @@ _Fig 6. Updated Ontology class management sheet with other ontology dbxrefs_
 
 __How to:__
 
-A. Add a column for DBXREF to your ontology class management sheet.
-B. Visit the EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)
-C. Start looking up the terms in the ontology class management sheet.
-D. Examine the definitions and super classes for the terms to determine if they match the concepts of your term.
-E. If the term is acceptable, record its ID in the new DBXREF column.
+A. Add a column for DBXREF to your ontology class management sheet.  
+B. Visit the EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)  
+C. Start looking up the terms in the ontology class management sheet.  
+D. Examine the definitions and super classes for the terms to determine if they match the concepts of your term.  
+E. If the term is acceptable, record its ID in the new DBXREF column.  
 
 __Tips__
 
 Not all ontologies are made the same, not all ontologies are equally reputable. These are ones you should review first: 
 
-1. UBERON: Uber-anatomy ontology. For body systems, organs.
-
-2. CL: Cell ontology. For cell types
-
-3. Other closely related organism ontologies. Check out that they include definitions and how many dbxrefs they use. If they don't have definitions or dont use many dbxrefs, it might not be a good idea to use.
-4. GO: Gene ontology. If your term is not found in UBERON, or CL, then visit GO.
+1. UBERON: Uber-anatomy ontology. For body systems, organs.  
+2. CL: Cell ontology. For cell types  
+3. Other closely related organism ontologies. Check out that they include definitions and how many dbxrefs they use. If they don't have definitions or dont use many dbxrefs, it might not be a good idea to use.  
+4. GO: Gene ontology. If your term is not found in UBERON, or CL, then visit GO.  
 
 __Software:__
-   A. Google Sheets
-   B. EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)
+   A. Google Sheets  
+   B. EBI's Ontology Lookup Service (https://www.ebi.ac.uk/ols)  
 
 __Required Skills:__
-	A. Reading
+   A. Reading  
 	
 
 _Fig 7. Ontology Lookup Service_
@@ -307,9 +304,7 @@ _Fig 9. Updated Ontology class management sheet with definitions_
 __How to:__
 
 A. Create a definition and a definition dbxref column in the ontology class management sheet.  
-
-B. If this term was found in another ontology you can reuse the definition. Be sure to record the other ontology class ID in the definition dbxref column.
-
+B. If this term was found in another ontology you can reuse the definition. Be sure to record the other ontology class ID in the definition dbxref column. 
 C. If this term is not found in another ontology. Look back through your Literature Term Collection Sheet (fig 1) to find your notes about first mention of a class. Retrieve these defintions from the publications for your classes. Record the definition and the PMID or other offical ID in your defintion dbxref column.
 
 
@@ -339,9 +334,8 @@ _Fig 10. Commonly used RO terms_
 
 __How to:__
 
-A. Determine which relationships you are using from RO.
-
-B. Determine usage rules like these common directional rules:
+A. Determine which relationships you are using from RO.  
+B. Determine usage rules like these common directional rules:  
 
 YES:			 finger  **part-of**  hand
  NO:			 hand **has-part** finger
@@ -353,10 +347,10 @@ YES:			differentiated cell **develops-from** stem cell
 > has-part and develops-into makes relatioship managment more difficult. Imagine that every time you add a new term that is part-of some structure, you need to remember what that structure is, and go find it to add new has-part relationships. Using part-of makes it so you only have to edit the new term you are adding. Adding all the structures that it is part of. 
 
 __Software:__
-   A. OLS and a google sheet to record RO term of interest
+   A. OLS and a google sheet to record RO term of interest  
 
 __Required Skills:__
-	A. Reading, writing, reasoning
+   A. Reading, writing, reasoning
 
 
 
@@ -412,9 +406,9 @@ More automated, scripts required, google sheet management of all terms, relation
 
 **Skills:**
 
-- Some scripting knowledge (Python, Perl, or other)
-- Read and writing yaml
-- Understanding [Dead Simple OWL Design Patterns (DOSDP)](https://github.com/INCATools/dead_simple_owl_design_patterns) 
+- Some scripting knowledge (Python, Perl, or other)  
+- Read and writing yaml  
+- Understanding [Dead Simple OWL Design Patterns (DOSDP)](https://github.com/INCATools/dead_simple_owl_design_patterns)   
 
 
 
@@ -445,12 +439,12 @@ __How to:__
 
 _Route 1_
 
-1. Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.
-2. OR ---> Run ODK to generate your template files, then open and edit in Protégé.
+1. Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.  
+2. OR ---> Run ODK to generate your template files, then open and edit in Protégé.  
 
 
 
-__Software:__  Protégé [, and possiblily ODK]
+**Software:**  Protégé [, and possiblily ODK]
 
 **Skills:** Protégé skills [, linux command line knowledge] 
 
@@ -458,19 +452,16 @@ __Software:__  Protégé [, and possiblily ODK]
 
 _Route 2:_
 
-1. Continue to add information into your google sheet.
-
-2. Add a column for an ID for each class and populate (PLANA:0000012)
-
-3. Create/Use DOSDP patterns for creating all your terms (Support is available).
-
-4. Run included ODK scripts to generate appropriate files and import terms from other ontologies.
+1. Continue to add information into your google sheet.  
+2. Add a column for an ID for each class and populate (PLANA:0000012)  
+3. Create/Use DOSDP patterns for creating all your terms (Support is available).  
+4. Run included ODK scripts to generate appropriate files and import terms from other ontologies.  
 
    
 
-__Software:__  ODK
+**Software:**  ODK  
 
-**Skills:** Protégé skills, linux command line knowledge 
+**Skills:** Protégé skills, linux command line knowledge   
 
 
 
@@ -579,9 +570,9 @@ An ontology is a living document. New terms will be needed to be added, terms wi
 
 **How to:**
 
-1. Keep modifiying your spread sheet and running ODK scripts to update your owl files.
-2. Make a new release.
-3. Make a plan on how to handle community involment for addition, modifying, and retiring of terms. 
+1. Keep modifiying your spread sheet and running ODK scripts to update your owl files.  
+2. Make a new release.  
+3. Make a plan on how to handle community involment for addition, modifying, and retiring of terms.   
 
 
 
