@@ -1,11 +1,12 @@
 # Spiraliabase-VLM-2020  
 
-## Ontologies? Ontoloigies!  
+## Ontologies? Ontologies!  
 
 December 10, 2020  
 
 Steph Nowotarski  
-Postdoctoral Researcher  
+Postdoctoral Researcher 
+Sánchez Alvarado Laboratory
 Stowers Institute for Medical Research  
 Kansas City, Missouri  
 
