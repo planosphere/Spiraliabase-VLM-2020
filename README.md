@@ -16,12 +16,14 @@ Stowers Institute for Medical Research
 Kansas City, Missouri  
 
 
-Links to files:  
+Links :  
 [Who is Sofia?](sofiarobb-intro.pdf)
 
 [Concepts of Connecting Data - A knowledge graph]()  
 
 [Intoduction to ontology building](introToOntologyBuilding.md)  
+
+[bioRxiv Paper : PLANA Ontology](https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1)
 
 
 
