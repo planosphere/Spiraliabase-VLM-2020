@@ -20,14 +20,14 @@ _PLANA Literature Google Sheet_
 
 
 __How to:__  
-   A. Specify search engine  
-    * i.e., Pubmed   
-   B. Select a starting and ending year with justifications  
-    *  i.e., 2005 - present,  2005=advent of RNAi  
-   C. Record your search terms  
-    *  i.e., *Schmidtea mediterranea*   
-   D. Provide a list of exceptions  
-    *  i.e., historical landmark publications: Hyman 1951  
+1. Specify search engine  
+  * i.e., Pubmed   
+1. Select a starting and ending year with justifications  
+  * i.e., 2005 - present,  2005=advent of RNAi  
+1. Record your search terms  
+  *  i.e., *Schmidtea mediterranea*   
+1. Provide a list of exceptions  
+  *  i.e., historical landmark publications: Hyman 1951  
 
 __Software:__  
    A. Publication search engine  
