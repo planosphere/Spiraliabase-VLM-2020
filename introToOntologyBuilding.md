@@ -48,7 +48,7 @@ __Overview:__
 
 The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.
 
-<u>Fig 1. Literature Term Collection Sheet</u>
+_Fig 1. Literature Term Collection Sheet_
 ![](ontology-images/litTerms.png)
 
 > column 1: the unique identifier for each citation from the literature list. 
