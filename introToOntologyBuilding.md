@@ -147,12 +147,12 @@ The goal is to identify groups of terms that have the same definition but differ
 _Fig 5. Updated Ontology class management sheet with conceptual groups_
 ![](ontology-images/termOrganization.png)
 
-> Ontology class management sheet from fig 4 with conceptually grouped terms.
+> Ontology class management sheet from fig 4 with conceptually grouped terms.  
 >
-> Column 1: best term (most popular, most "correct") for this concept
-> Column 2: collect terms that work better in a definition of another term than becoming its own class
-> Column 3: semi-colon separated list of all terms that work best as synonyms
-> Column 4: the combined list of citation IDs for the class label, synonyms, and definition terms.
+> Column 1: best term (most popular, most "correct") for this concept  
+> Column 2: collect terms that work better in a definition of another term than becoming its own class  
+> Column 3: semi-colon separated list of all terms that work best as synonyms  
+> Column 4: the combined list of citation IDs for the class label, synonyms, and definition terms.  
 
 
 
@@ -185,12 +185,12 @@ The goal is to determine the overall structure and granularity of the ontology b
 _Fig 5. Updated Ontology class management sheet with hierarchical groups_
 ![](ontology-images/heirGrouping.png)
 
-> Ontology class manage sheet that has added super classes.
+> Ontology class manage sheet that has added super classes.  
 >
-> column 1 : class label
-> column 2 : big bin, or the super class, for class, ie, body region, organ, tissue
+> column 1 : class label  
+> column 2 : big bin, or the super class, for class, ie, body region, organ, tissue  
 >
-> Col 3, 4  from above.
+> Col 3, 4  from above.  
 
 
 
@@ -235,7 +235,7 @@ _Fig 6. Updated Ontology class management sheet with other ontology dbxrefs_
 
 > Ontology class management sheet with a new column, dbxref.
 > 
-> column 4: other ontology IDs, database crossreferences, dbxref
+> column 4: other ontology IDs, database crossreferences, dbxref  
 
 
 
@@ -290,8 +290,8 @@ _Fig 9. Updated Ontology class management sheet with definitions_
 
 > Add more information to your class management sheet. Add in definitions and definition citations. The definiton dbxref is an external database reference that is specifially a reference for the definition. A general dbxref are references to classes in other ontologies that are homologous. 
 >
-> column 4: definition
-> column 5: the definition citation
+> column 4: definition  
+> column 5: the definition citation  
 
 
 
@@ -530,7 +530,7 @@ A standard OBO ontology reasoner (ELK) is used to determine if the relations you
 * Correct any inconsistencies
 * Run more queries
 
-<u>Fig 14. Protégé DL Query Plugin and example query and reasoned results</u>
+_Fig 14. Protégé DL Query Plugin and example query and reasoned results_
 
 ![](ontology-images/dlquery.png)
 
