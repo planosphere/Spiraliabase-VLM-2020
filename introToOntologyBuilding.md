@@ -128,7 +128,7 @@ AP gradient	144
 
 
 
-_Fig 4. Ontology class management sheet_
+_Fig 4. Ontology class management sheet_  
 ![](ontology-images/classes.png)
 
 > Output from the perl script can be pasted into a google sheet. Use this sheet to build and further organize your ontology terms
@@ -321,7 +321,7 @@ __Overview:__
 
 One of the biggest differences between controlled vocabulary and an ontology is that ontology classes can be related to each other. Using defined and consistent relationships is a cornerstone for interoperability, anatomy ontologies should be able to cross talk for comparative work. Most ontologies use relationship terms from the OBO Relations Ontology (RO). 
 
-_Fig 10. Commonly used RO terms_
+_Fig 10. Commonly used RO terms_  
 ![](ontology-images/RO-terms.png)
 
 
@@ -331,11 +331,11 @@ __How to:__
 * Determine which relationships you are using from RO.  
 * Determine usage rules like these common directional rules:  
 
-YES:			 finger  **part-of**  hand
- NO:			 hand **has-part** finger
+YES:			 finger  **part-of**  hand  
+ NO:			 hand **has-part** finger  
 
-YES:			differentiated cell **develops-from** stem cell
- NO:			stem cell **develops-into** differentiated cell   (not all stem cells develop into anything)
+YES:			differentiated cell **develops-from** stem cell  
+ NO:			stem cell **develops-into** differentiated cell   (not all stem cells develop into anything)  
 
 
 > has-part and develops-into makes relatioship managment more difficult. Imagine that every time you add a new term that is part-of some structure, you need to remember what that structure is, and go find it to add new has-part relationships. Using part-of makes it so you only have to edit the new term you are adding. Adding all the structures that it is part of. 
@@ -469,14 +469,16 @@ The goal is to give your ontology the power of reasoning. We want to connect ter
 
 
 
-'GABAergic neuron' **is_a** 'neurosecretory neuron'
---
-'neurosecretory neuron' **'part of' some** 'central nervous system'
-'neurosecretory neuron' **'part of' some** 'peripheral nervous system'
---
-'central nervous system' **is_a** 'nervous system'
-'peripheral nervous system' **is_a** 'nervous system'
---
+'GABAergic neuron' **is_a** 'neurosecretory neuron'  
+
+
+'neurosecretory neuron' **'part of' some** 'central nervous system'  
+'neurosecretory neuron' **'part of' some** 'peripheral nervous system'  
+
+
+'central nervous system' **is_a** 'nervous system'  
+'peripheral nervous system' **is_a** 'nervous system'  
+
 
 Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' (even though this is not explicitly stated)
 
@@ -488,7 +490,7 @@ Now we can infer that 'GABAergic neuron' is <u>part of</u> the 'nervous system' 
 
 _Route 1_
 
-1. Use Protégé to add annotation properties and relationships (SubClass Of).
+* Use Protégé to add annotation properties and relationships (SubClass Of).
 
 
 
