@@ -19,23 +19,23 @@ _PLANA Literature Google Sheet_
 
 
 
-__How to:__
+__How to:__  
    A. Specify search engine  
-     - i.e., Pubmed   
+       - i.e., Pubmed   
    B. Select a starting and ending year with justifications  
-     - i.e., 2005 - present,  2005=advent of RNAi  
+       - i.e., 2005 - present,  2005=advent of RNAi  
    C. Record your search terms  
-     - i.e., *Schmidtea mediterranea*   
+       - i.e., *Schmidtea mediterranea*   
    D. Provide a list of exceptions  
-     - i.e., historical landmark publications: Hyman 1951  
+       - i.e., historical landmark publications: Hyman 1951  
 
-__Software:__
+__Software:__  
    A. Publication search engine  
-     - for publication search  
+       - for publication search  
    B. Google Sheets  
-     - for recording and organizing publications  
+       - for recording and organizing publications  
 
-__Required Skills:__
+__Required Skills:__  
  		Reading, spread sheet knowledge
 
 
@@ -44,7 +44,7 @@ __Required Skills:__
 
 ### 2. Identify and record anatomical terms.
 
-__Overview:__
+__Overview:__  
 
 The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.  
 
