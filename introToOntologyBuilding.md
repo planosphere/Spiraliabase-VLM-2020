@@ -1,6 +1,6 @@
 # Introduction To Creating An Anatomy Ontology
 
-This is an introduction workflow for how we created the Planarian Anatomy Ontology (PLANA). Check out our manuscript (https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1 ).
+This is an overview of the workflow we used to create the Planarian Anatomy Ontology (PLANA). The goal of this presentation is to give you an idea of what skills you need to create an anatomy ontology of your own and to give you some guidlines and tips. Check out the manuscript about our anatomy ontology, PLANA  (https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1).
 
 
 
@@ -10,12 +10,12 @@ This is an introduction workflow for how we created the Planarian Anatomy Ontolo
 
 __Overview:__
 
-Very first step is to amass publications for the collection of terms for your new ontology. The manuscripts should contain anatomical terms that cover the majority of the terms you want to include in the new anatomy ontology.  This is an important method for reporting and reproducibility.
+The very first step is to amass publications for the collection of terms for your new ontology. The manuscripts should contain anatomical terms that cover the majority of the terms you want to include in the new anatomy ontology.  This is an important method for reporting and reproducibility.
 
 _PLANA Literature Google Sheet_
 ![](ontology-images/litSheet.png)
 
-> Capture the unique identifier, such as the Pubmed id (PMID) or ISBN, any other fields you might want to search by, for example, author, title, and citation. To each record we assigned a similarly formatted unique ID in the first column.
+> We captured the publication unique identifier, such as the Pubmed id (PMID) or ISBN, and other fields we wanted to search by (author, title, and citation). Each record was assigned a similarly formatted unique record ID in the first column (i.e., 1,2,3,4..).
 
 
 
@@ -36,7 +36,7 @@ __Software:__
   * for recording and organizing publications  
 
 __Required Skills:__  
- 		Reading, spread sheet knowledge
+Reading, spread sheet knowledge
 
 
 
