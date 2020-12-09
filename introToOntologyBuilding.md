@@ -496,7 +496,7 @@ _Route 1_
 
 
 
-_Fig 15. Protégé: Subclass Of_
+_Fig 15. Protégé: Subclass Of_  
 ![](ontology-images/protege-subclass.png)
 
 
