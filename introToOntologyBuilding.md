@@ -46,7 +46,7 @@ Reading, spread sheet knowledge
 
 __Overview:__    
 
-The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to invented.  
+The goal is to be as complete as possible. This means that the ontology will contain terms the community wants to use, and it means it will contain the terms that the community has already used. Having as many people in the community use the ontology is important so this means inclusiveness is important. Don't reinvent the wheel, terms do not need to be invented.  
 
 _Fig 1. Literature Term Collection Sheet_  
 ![](ontology-images/litTerms.png)
@@ -70,7 +70,7 @@ __Software:__
    Option 2:  Scripting language like perl or python.   
 
 __Required Skills:__    
-   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to colums, paste special transpose)  
+   Option 1: Google Sheets knowledge for recording terms and formula usage for text manipulation (i.e., text to columns, paste special transpose)  
    Option 2: Use or write a script to manipulate text.   
 
 _Fig 2. Example Perl script for organizing data_    
@@ -133,8 +133,8 @@ _Fig 4. Ontology class management sheet_
 
 > Output from the perl script can be pasted into a google sheet. Use this sheet to build and further organize your ontology terms
 >
-> Column 1: term name
-> Column 2: list of all citation ids that mention the term
+> Column 1: term name  
+> Column 2: list of all citation ids that mention the term  
 
 
 
@@ -142,7 +142,7 @@ _Fig 4. Ontology class management sheet_
 
 __Overview:__
 
-The goal is to identify groups of terms that have the same definition but different names, synonyms. An additional goal is to pinpoint terms that might not be great solo terms, or synonyms, but would be excellent to use in a definition.
+The goal is to identify groups of terms that have the same definition but different names (synonyms). An additional goal is to pinpoint terms that might not be great solo terms, or synonyms, but would be excellent to use in a definition.
 
 _Fig 5. Updated Ontology class management sheet with conceptual groups_
 ![](ontology-images/termOrganization.png)
@@ -158,12 +158,11 @@ _Fig 5. Updated Ontology class management sheet with conceptual groups_
 
 __How to:__
 
-* Make Groups for term use:  
-  * Synonyms  
-  * Words to be used in the definition.  
-  * Classes  
+* Add columns to your ontology management sheets from Step 2:  
+  * Synonyms (col 3 in fig 5)
+  * Words to be used in the definition (col 2 in fig 5)
   * Not useful (include reason why)  
-* Copy and paste terms into new groups (see fig 5)  
+* Copy and paste terms into new columns (see fig 5)  
 
 __Software:__  
    Google Sheets  
@@ -182,21 +181,21 @@ __Overview:__
 
 The goal is to determine the overall structure and granularity of the ontology by grouping terms into larger categorical bins.
 
-_Fig 5. Updated Ontology class management sheet with hierarchical groups_
+_Fig 6. Updated Ontology class management sheet with hierarchical groups_
 ![](ontology-images/heirGrouping.png)
 
 > Ontology class manage sheet that has added super classes.  
 >
-> column 1 : class label  
-> column 2 : big bin, or the super class, for class, ie, body region, organ, tissue  
+> column 1: class label  
+> column 2: big bin, or the super class, for class, i.e., body region, organ, tissue  
 >
-> Col 3, 4  from above.  
+> Col 3, 4  from fig 5.  
 
 
 
 __How to:__
 
-*  Group terms into 'big bins' or Super Classes. Add a new column to your ontology class management sheet.  
+*  Group terms into 'big bins' or Super Classes. Add a single new column to your ontology class management sheet, 'subclass of'.  
 
 Super classes:  
   * Body regions (head region)  
@@ -226,11 +225,11 @@ __Required Skills:__
 
 __Overview:__
 
-The goal is to start connecting your ontology to other ontologies. There is more strength in ontolgoies that are interoperable with other ontologies. This allows for reusing other's hard work with definitions, synonymns, and linking out to other databases (database crossreferences = DBXREF).
+The goal is to start connecting your ontology to other ontologies. There is more strength in ontologies that are interoperable with other ontologies. This allows for reusing other's hard work with definitions, synonyms, and linking out to other databases (database cross references = DBXREF).
 
 
 
-_Fig 6. Updated Ontology class management sheet with other ontology dbxrefs_
+_Fig 7. Updated Ontology class management sheet with other ontology dbxrefs_
 ![](ontology-images/dbxref.png)
 
 > Ontology class management sheet with a new column, dbxref.
@@ -263,7 +262,7 @@ __Required Skills:__
    Reading  
 	
 
-_Fig 7. Ontology Lookup Service_
+_Fig 8. Ontology Lookup Service_
 
 ![](ontology-images/ols.png)
 
@@ -271,7 +270,7 @@ _Fig 7. Ontology Lookup Service_
 
 
 
-_Fig 8. Ontology Lookup Service_
+_Fig 9. Ontology Lookup Service_
 
 ![](ontology-images/ols2.png)
 
@@ -283,12 +282,12 @@ _Fig 8. Ontology Lookup Service_
 
 __Overview:__
 
-The goal is to write a complete and descriptive definition for each class. These should come from the literature, but can be expanded to be more clear. The concept of a class, is that a class is a complete idea which is centered on its definition. The label and the synonyms should be able to be used interchangably. This is made possible by well written definitions.
+The goal is to write a complete and descriptive definition for each class. These should come from the literature but can be expanded to be clearer. The concept of a class is that a class is a complete idea which is centered on its definition. The label and the synonyms should be able to be used interchangeably. This is made possible by well written definitions.
 
-_Fig 9. Updated Ontology class management sheet with definitions_
+_Fig 10. Updated Ontology class management sheet with definitions_
 ![](ontology-images/defs.png)
 
-> Add more information to your class management sheet. Add in definitions and definition citations. The definiton dbxref is an external database reference that is specifially a reference for the definition. A general dbxref are references to classes in other ontologies that are homologous. 
+> Add more information to your class management sheet. Add in definitions and definition citations. The definition dbxref is an external database reference that is specifically a reference for the definition. A general dbxref are references to classes in other ontologies that are homologous. 
 >
 > column 4: definition  
 > column 5: the definition citation  
@@ -299,7 +298,7 @@ __How to:__
 
 * Create a definition and a definition dbxref column in the ontology class management sheet.  
 * If this term was found in another ontology you can reuse the definition. Be sure to record the other ontology class ID in the definition dbxref column. 
-* If this term is not found in another ontology. Look back through your Literature Term Collection Sheet (fig 1) to find your notes about first mention of a class. Retrieve these defintions from the publications for your classes. Record the definition and the PMID or other offical ID in your defintion dbxref column.
+* If this term is not found in another ontology. Look back through your Literature Term Collection Sheet (fig 1) to find your notes about first mention of a class. Retrieve these definitions from the publications for your classes. Record the definition and the PMID or other external ID in your defintion dbxref column.
 
 
 
@@ -321,7 +320,7 @@ __Overview:__
 
 One of the biggest differences between controlled vocabulary and an ontology is that ontology classes can be related to each other. Using defined and consistent relationships is a cornerstone for interoperability, anatomy ontologies should be able to cross talk for comparative work. Most ontologies use relationship terms from the OBO Relations Ontology (RO). 
 
-_Fig 10. Commonly used RO terms_  
+_Fig 11. Commonly used RO terms_  
 ![](ontology-images/RO-terms.png)
 
 
@@ -338,7 +337,7 @@ YES:			differentiated cell **develops-from** stem cell
  NO:			stem cell **develops-into** differentiated cell   (not all stem cells develop into anything)  
 
 
-> has-part and develops-into makes relatioship managment more difficult. Imagine that every time you add a new term that is part-of some structure, you need to remember what that structure is, and go find it to add new has-part relationships. Using part-of makes it so you only have to edit the new term you are adding. Adding all the structures that it is part of. 
+> using 'has-part' and 'develops-into' makes relationship management more difficult. Imagine that every time you add a new term that you need to systematically determine every structure that 'has-part' this new term, edit each of these terms with a new 'has-part' relationship.  Using 'part-of' makes it so you only have to edit the single new term. Less chance of human error.
 
 __Software:__
    OLS and a google sheet to record RO term of interest  
@@ -348,7 +347,7 @@ __Required Skills:__
 
 
 
-_Fig 11. OBO Relations Ontology Search at EBI OLS_
+_Fig 12. OBO Relations Ontology Search at EBI OLS_
 ![](ontology-images/RO-OLS.png)
 
 > Webinterface at EBI's OLS for Relationship ontology terms
@@ -361,7 +360,7 @@ _Fig 11. OBO Relations Ontology Search at EBI OLS_
 
 __Overview:__
 
-Goal is to set up a standard framework for interoperability and longterm ontology management. A standard framework includes the directory structure, the files, and the software you use to manage the ontology. The framework makes it possible to easily reuse terms and parts of other ontologies, check for errors, and manage ontology releases.
+The goal is to set up a standard framework for optimal interoperability and longterm ontology management. A standard framework includes the directory structure, the files, and the software you use to manage the ontology. The framework makes it possible to easily reuse terms and parts of other ontologies, check for errors, and manage ontology releases. Your framework should also help you to adhere to the Open Biomedical Ontology (OBO) [Principles](http://www.obofoundry.org/principles/fp-000-summary.html).
 
 
 
@@ -379,11 +378,11 @@ __Software:__  [Protégé](https://protege.stanford.edu/) (free)
 
 **Pro:** fairly easy to learn with tutorials and at the [available short course](https://protege.stanford.edu/short-courses.php), supportive community
 
-**Possible Cons:** need to study the strucutre of other OBO ontologies to get your hierarchy correct, manage each term separately, one by one, lots of human time
+**Possible Cons:** need to study the structure of other OBO ontologies to get your hierarchy correct, manage each term separately, one by one, lots of human time
 
 
 
-_Fig 12. Protégé_
+_Fig 13. Protégé_
 ![](ontology-images/protege.png)
 
 > View of the 'auricle' class. From the hierarchy you can see it is an 'organ'. It has a variety of annotation properties that you can see and edit in the 'Annotations' panel. How 'auricle' is related to other terms can be found in the 'Description' panel.
@@ -392,11 +391,14 @@ _Fig 12. Protégé_
 
 
 
-_Route 2:_
+_Route 2: *Used by PLANA_  
 
 More automated, scripts required, google sheet management of all terms, relationships, and definitions.
 
-**Software:** [Ontology-Development-kit (ODK)](https://github.com/INCATools/ontology-development-kit), [ROBOT](http://robot.obolibrary.org/), Google Sheets
+**Software:** 
+* [Ontology-Development-kit (ODK)](https://github.com/INCATools/ontology-development-kit)
+* [ROBOT](http://robot.obolibrary.org/)
+* Google Sheets
 
 **Skills:**
 
@@ -406,7 +408,7 @@ More automated, scripts required, google sheet management of all terms, relation
 
 
 
-**Pros:** continue to use google sheets, quicker, bulk management, easier to manage, amazing support community, instrucutions and manuals available. 
+**Pros:** continue to use google sheets, quicker, bulk management, easier to manage, amazing support community, instructions and manuals available. 
 
 **Possible Cons:** need to use command line tools, use/write small scripts, and understand more file formats
 
@@ -414,7 +416,7 @@ More automated, scripts required, google sheet management of all terms, relation
 
 
 
-_Fig 13. Command line management_
+_Fig 14. Command line management_  
 ![](ontology-images/commandline-run.png)
 
 
@@ -425,7 +427,7 @@ _Fig 13. Command line management_
 
 __Overview:__
 
-Goal is to create your ontology classes from the terms in the ontology class management sheet and output as ontology web language (owl) . Remember, a class is a concept that has a label and object properties. How you create your classes depends on your choice of route in the last step. 
+The goal is to create your ontology classes from the terms in the ontology class management sheet and output as ontology web language (owl). Remember, a class is a concept that has a label and object properties. How you create your classes depends on your choice of route in the last step. 
 
 
 
@@ -433,7 +435,7 @@ __How to:__
 
 _Route 1_
 
-* Use Protégé to manually create every class in the correct format to mantain standards and to integrate with other ontologies.  
+* Use Protégé to manually create every class in the correct format to maintain standards and to integrate with other ontologies.  
 * OR ---> Run ODK to generate your template files, then open and edit in Protégé.  
 
 
@@ -444,7 +446,7 @@ _Route 1_
 
 
 
-_Route 2:_
+_Route 2: *Used by PLANA_
 
 * Continue to add information into your google sheet.  
 * Add a column for an ID for each class and populate (PLANA:0000012)  
@@ -465,7 +467,7 @@ _Route 2:_
 
 **Overview:**
 
-The goal is to give your ontology the power of reasoning. We want to connect terms like
+The goal is to give your ontology the power of reasoning. We want to connect terms like this:
 
 
 
@@ -494,7 +496,7 @@ _Route 1_
 
 
 
-_Fig 14. Protégé: Subclass Of_
+_Fig 15. Protégé: Subclass Of_
 ![](ontology-images/protege-subclass.png)
 
 
@@ -507,10 +509,10 @@ _Route 2:_
 
 
 
-_Fig 15. Ontology class management sheet with class relationships_
-![](/Users/smr/Desktop/ontology-how-to/ontology-images/relationshipsSheet.png)
+_Fig 16. Ontology class management sheet with class relationships_
+![](ontology-images/relationshipsSheet.png)
 
-> Two columns for each relationship property, ie, posterior primary gut branch 'part_of'  'PLANA:0000026' 'gut'
+> Two columns for each relationship property, i.e., posterior primary gut branch 'part_of'  'PLANA:0000026' 'gut'
 
 
 
@@ -530,7 +532,7 @@ A standard OBO ontology reasoner (ELK) is used to determine if the relations you
 * Correct any inconsistencies
 * Run more queries
 
-_Fig 14. Protégé DL Query Plugin and example query and reasoned results_
+_Fig 17. Protégé DL Query Plugin and example query and reasoned results_
 
 ![](ontology-images/dlquery.png)
 
@@ -548,7 +550,7 @@ The goal is to have official versioned releases. This is important for users tha
 
 **How to:**
 
-* Create a GitHub release. There are tutorials for this, and information can befound in the ODK REAMDE documentation. 
+* Create a GitHub release. There are tutorials for this, and information can be found in the ODK REAMDE documentation. 
 
 
 
@@ -566,9 +568,10 @@ An ontology is a living document. New terms will be needed to be added, terms wi
 
 **How to:**
 
-* Keep modifiying your spread sheet and running ODK scripts to update your owl files.  
+* Keep modifying your spread sheet and running ODK scripts to update your owl files.  
 * Make a new release.  
-* Make a plan on how to handle community involment for addition, modifying, and retiring of terms.   
+* Make a plan on how to handle community involvement for addition, modifying, and retiring of terms.   
+
 
 
 
