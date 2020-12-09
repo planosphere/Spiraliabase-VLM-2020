@@ -17,6 +17,7 @@ Kansas City, Missouri
 
 
 Links :  
+[What is an ontology, the PLANA ontology and PAGE resource](20201210_Spiraliabase_PLANAOntology_small.pdf)
 [Who is Sofia?](sofiarobb-intro.pdf)
 
 [Concepts of Connecting Data - A knowledge graph]()  
