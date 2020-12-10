@@ -1,6 +1,6 @@
 # Introduction To Creating An Anatomy Ontology
 
-This is an overview of the workflow we used to create the Planarian Anatomy Ontology (PLANA). The goal of this presentation is to give you an idea of what skills you need to create an anatomy ontology of your own and to give you some guidlines and tips. Check out the manuscript about our anatomy ontology, PLANA  (https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1).
+This is an overview of the workflow we developed while building the Planarian Anatomy Ontology (PLANA). The goal of this presentation is to give you an idea of what skills you need to create an anatomy ontology of your own and to give you some guidlines and tips. Check out the manuscript about our anatomy ontology, PLANA  (https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1).
 
 Before you start, ask yourself, "Do you need an anatomy ontology?".  
 
