@@ -2,6 +2,11 @@
 
 This is an overview of the workflow we used to create the Planarian Anatomy Ontology (PLANA). The goal of this presentation is to give you an idea of what skills you need to create an anatomy ontology of your own and to give you some guidlines and tips. Check out the manuscript about our anatomy ontology, PLANA  (https://www.biorxiv.org/content/10.1101/2020.08.14.251579v1).
 
+Before you start, ask yourself, "Do you need an anatomy ontology?".  
+
+!!!! Make sure there isn't one already. !!!!  
+
+Does the community need a resource to bring all the vocabulary together? Is there an abundance of data that would do well if it was better organized with controlled anatomical concepts? If there isn't an anatomy ontology yet and you answered yes to any of these questions, then you do need an anatomy ontology. 
 
 
 ### 1. Identify publications to use for term collection.
